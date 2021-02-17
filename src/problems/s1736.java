@@ -3,7 +3,7 @@ package problems;
 /**
  * Latest Time by Replacing Hidden Digits
  */
-public class S1736 {
+public class s1736 {
     public String maximumTime(String time) {
         char[] t = time.toCharArray();
         if (t[0] == '?')

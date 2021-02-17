@@ -3,7 +3,7 @@ package problems;
 /**
  * Maximum Number of Balls in a Box
  */
-public class S1742 {
+public class s1742 {
     public int countBalls(int lo, int hi) {
         int boxes[] = new int[46], max = 0;
         for (int i = lo; i <= hi; i++) {

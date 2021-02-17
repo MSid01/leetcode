@@ -7,7 +7,7 @@ import java.util.stream.IntStream;
 /**
  * Sum of Unique Elements
  */
-public class S1748 {
+public class s1748 {
     public int sumOfUnique(int[] a) {
         Set<Integer> uniq = new HashSet<>(), dups = new HashSet<>();
         int sum = 0;

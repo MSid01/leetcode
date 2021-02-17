@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * Maximum Score From Removing Stones
  */
-public class S1753 {
+public class s1753 {
     public int maximumScore(int a, int b, int c) {
         return maxScore(new int[]{a, b, c});
     }

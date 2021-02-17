@@ -3,7 +3,7 @@ package problems;
 /**
  * Reformat Phone Number
  */
-public class S1694 {
+public class s1694 {
     public String reformatNumber(String n) {
         StringBuilder s = new StringBuilder();
         for (int i = 0; i < n.length(); i++) {

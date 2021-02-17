@@ -7,7 +7,7 @@ import java.util.PriorityQueue;
 /**
  * Maximum Units on a Truck
  */
-public class S1710 {
+public class s1710 {
     public int maximumUnits(int[][] boxTypes, int truckSize) {
         PriorityQueue<int[]> q = new PriorityQueue<>((o1, o2) -> o2[1] - o1[1]);
         Collections.addAll(q, boxTypes);

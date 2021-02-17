@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * Count Good Meals
  */
-public class S1711 {
+public class s1711 {
     public int countPairs(int[] d) {
         Map<Integer, Integer> m = new HashMap<>();
         long r = 0, N = (long) Math.pow(2, 22);

@@ -3,7 +3,7 @@ package problems;
 /**
  * Count of Matches in Tournament
  */
-public class S1688 {
+public class s1688 {
 
     public int numberOfMatches(int n) {
         if (n == 1) return 0;
