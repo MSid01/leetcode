@@ -1,8 +1,11 @@
-package s1704;
+package problems;
 
 import java.util.Set;
 
-public class Solution {
+/**
+ * Determine if String Halves Are Alike
+ */
+public class S1704 {
     public boolean halvesAreAlike(String s) {
         Set<Character> vowels = Set.of('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U');
         int c1 = 0, c2 = 0, halfIdx = s.length() / 2;

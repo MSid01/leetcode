@@ -1,6 +1,9 @@
-package s1701;
+package problems;
 
-public class Solution {
+/**
+ * Average Waiting Time
+ */
+public class S1701 {
     public double averageWaitingTime(int[][] customers) {
         double t = 0, total = 0;
         for (int[] c : customers) {

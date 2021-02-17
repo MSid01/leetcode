@@ -1,8 +1,11 @@
-package s1753;
+package problems;
 
 import java.util.Arrays;
 
-public class Solution {
+/**
+ * Maximum Score From Removing Stones
+ */
+public class S1753 {
     public int maximumScore(int a, int b, int c) {
         return maxScore(new int[]{a, b, c});
     }

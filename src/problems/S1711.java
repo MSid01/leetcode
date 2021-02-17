@@ -1,9 +1,12 @@
-package s1711;
+package problems;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class Solution {
+/**
+ * Count Good Meals
+ */
+public class S1711 {
     public int countPairs(int[] d) {
         Map<Integer, Integer> m = new HashMap<>();
         long r = 0, N = (long) Math.pow(2, 22);

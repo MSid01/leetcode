@@ -1,6 +1,9 @@
-package s1736;
+package problems;
 
-public class Solution {
+/**
+ * Latest Time by Replacing Hidden Digits
+ */
+public class S1736 {
     public String maximumTime(String time) {
         char[] t = time.toCharArray();
         if (t[0] == '?')

@@ -1,10 +1,13 @@
-package s1748;
+package problems;
 
 import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.IntStream;
 
-public class Solution {
+/**
+ * Sum of Unique Elements
+ */
+public class S1748 {
     public int sumOfUnique(int[] a) {
         Set<Integer> uniq = new HashSet<>(), dups = new HashSet<>();
         int sum = 0;

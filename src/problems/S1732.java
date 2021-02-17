@@ -1,6 +1,9 @@
-package s1732;
+package problems;
 
-public class Solution {
+/**
+ * Find the Highest Altitude
+ */
+public class S1732 {
     public int largestAltitude(int[] gain) {
         int max = 0, alt = 0;
         for (int g : gain) {
