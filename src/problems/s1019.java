@@ -12,11 +12,10 @@ public class s1019 {
             vals.push(head.val);
         int[] r = new int[vals.size()];
         for (int i = r.length - 1; i >= 0; i--) {
-            int val = vals.pop();
-            while (!s.isEmpty() && s.peek() <= val)
+            while (!s.isEmpty() && s.peek() <= vals.peek())
                 s.pop();
             r[i] = !s.isEmpty() ? s.peek() : 0;
-            s.push(val);
+            s.push(vals.pop());
         }
         return r;
     }
