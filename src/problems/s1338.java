@@ -9,15 +9,11 @@ import java.util.PriorityQueue;
  */
 public class s1338 {
     public int minSetSize(int[] a) {
-        int f[] = new int[100_001], len = a.length / 2, minSize = 0;
-        for (int i : a)
-            f[i]++;
+        int f[] = new int[100_001], size = 0;
+        Arrays.stream(a).forEach(i -> f[i]++);
         PriorityQueue<Integer> q = new PriorityQueue<>(Comparator.reverseOrder());
         Arrays.stream(f).filter(i -> i > 0).forEach(q::offer);
-        while (len > 0) {
-            len -= q.poll();
-            minSize++;
-        }
-        return minSize;
+        for (int len = a.length / 2; len > 0; size++, len -= q.poll()) ;
+        return size;
     }
 }
