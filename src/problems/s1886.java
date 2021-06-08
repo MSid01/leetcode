@@ -1,22 +1,20 @@
 package problems;
 
+import java.util.BitSet;
+
 /**
  * Determine Whether Matrix Can Be Obtained By Rotation
  */
 public class s1886 {
     public boolean findRotation(int[][] m, int[][] t) {
-        boolean r1 = true, r2 = true, r3 = true, r4 = true;
-        for (int i = 0; i < m.length; i++)
+        BitSet r = new BitSet(4);//4 bits for each rotation, i bit false -> i rotation equals to m
+        for (int i = 0, n = m.length - 1; i < m.length; i++)
             for (int j = 0; j < m.length; j++) {
-                if (m[i][j] != t[i][j])
-                    r1 = false;
-                if (m[i][j] != t[j][m.length - 1 - i])
-                    r2 = false;
-                if (m[i][j] != t[m.length - 1 - i][m.length - 1 - j])
-                    r3 = false;
-                if (m[i][j] != t[m.length - 1 - j][i])
-                    r4 = false;
+                if (m[i][j] != t[i][j]) r.set(0, true);
+                if (m[i][j] != t[j][n - i]) r.set(1, true);
+                if (m[i][j] != t[n - i][n - j]) r.set(2, true);
+                if (m[i][j] != t[n - j][i]) r.set(3, true);
             }
-        return r1 || r2 || r3 || r4;
+        return r.cardinality() != 4;
     }
 }
